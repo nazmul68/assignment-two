@@ -35,7 +35,7 @@ body {
     background-color: #DD0000;
     color: #FFFFFF;
     border: none;
-    padding: 8px 14px;
+    padding: 15px 35px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -74,16 +74,21 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
 }
 
 .button-div a .link-button {
-    background-color: #FFFFFF;
+    background-color: #E8E8E8;
     padding: 15px 40px;
     margin-bottom: 40px;
     margin-top: 15px;
     border-radius: 5px;
     border: none;
+    color: #161616;
+}
+
+.button-div a .color {
+    background-color: #DD0000;
+    color: #FFFFFF;
 }
 
 .right-section {
@@ -95,15 +100,53 @@ body {
 
 }
 
+
+.upcoming-matches {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+.match {
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgb(235, 235, 235);
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
 .blog .blog-img {
     width: 95%;
+
 }
 
 .horizontal-flex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.flex-start {
+    display: flex;
+    max-width: 140px;
+    justify-content: space-between;
+
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left img {
+    margin-right: 8px;
+}
+
+.right img {
+    margin-right: 8px;
 }
 
 .blog {
@@ -116,11 +159,11 @@ body {
 /* footer part */
 footer {
     background-color: rgba(0, 10, 0, 1);
-    height: 310px;
+    height: 280px;
 }
 
 footer h2 {
-    color: #FFFFFF;
+    color: #7cbb6c;
     text-align: center;
     font-style: italic;
     padding-top: 80px;
@@ -136,12 +179,29 @@ nav ul {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    list-style: none;
 }
 
 nav ul li a {
     color: #FFFFFF;
-    text-decoration: none;
     Font-size: 14px;
     padding: 30px;
+    text-decoration: none;
 
 }
+
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-media-icon a {
+
+    margin: 0 30px;
+    font-size: 20px;
+    color: rgb(27, 211, 150);
+
+}
+
+/* media - queries */
